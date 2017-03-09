@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set PYTHONPATH="/usr/lib64/python3.5/site-packages/django"
+export DJANGO_SETTINGS_MODULE="settings.py"
+exit 0
