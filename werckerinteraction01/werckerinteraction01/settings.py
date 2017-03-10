@@ -25,7 +25,7 @@ SECRET_KEY = 'w!m!py%w=ctv-o-ciz!ixdg!cj#)n_fslxnqj*$qg83_o(1*xa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0','192.168.99.101','192.168.99.1']
 
 
 # Application definition
@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'dpl',
         'USER': 'devops',
         'PASSWORD' : 'devops',
-        'HOST':'localhost',
+        'HOST':'127.0.0.1',
         'PORT':'5432',
     }
 }
