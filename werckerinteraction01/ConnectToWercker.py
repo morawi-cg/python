@@ -4,7 +4,7 @@ import os, sys
 import requests
 import json
 from json2html import *
-os.system("../../Auth/authFile.py")
+os.system("../../../Auth/authFile.py")
 url = 'https://app.wercker.com/api/v3/applications/wercker/docs'
 #url = 'https://app.wercker.com/api/v3/'
 headers = {'Authorization':'TokenName Token'}

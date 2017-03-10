@@ -1,0 +1,15 @@
+# General help with this vm
+
+# Blue Mix Help-Section
+# To active the BlueMix Docker as your main daemon 
+# activate the script below.
+
+# /bin/setbluemixdocker
+
+# Django Help Section
+# General help with Django django-admin --help
+# Create project django-admin startproject werckerinteraction01
+# If you have made change you must run 'python3 manage.py migrate'
+# Run server on all IPs 'python3 manage.py runserver 0.0.0.0:8000'
+
+
