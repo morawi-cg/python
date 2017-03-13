@@ -1,4 +1,4 @@
-"""werckerinteraction01 URL Configuration
+"""dpl_api URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -13,17 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib import admin
-from tastypie import Api
-from wercker.api import werckerResource
-api = Api(api_name='v1')
-api.register(werckerResource())
-#from ConnectToWercker import *
-#from WerckerConnect import *
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    #url(r'^connectowercker/',WerckerConnect),
-    url(r'api/', include(api.url))
-    url(r’^’, include(‘wercker.urls’)),
+    url(r'^wercker', wercker.urls),
 ]
