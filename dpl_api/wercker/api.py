@@ -1,10 +1,10 @@
 from tastypie.resources import ModelResource
-from wercker.models import Wercker,
+from wercker.models import wercker
  
  
 class WerckerResource(ModelResource):
-“””Resource for Wercker
-“””
-class Meta:
-queryset = Wercker.objects.all()
-resource_name = ‘wercker’
+#“””Resource for wercker
+#“””
+ class Meta:
+   queryset = wercker.objects.all()
+   resource_name = 'wercker'

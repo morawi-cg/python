@@ -8,8 +8,9 @@ from json2html import *
 url = 'https://app.wercker.com/api/v3/applications/wercker/docs'
 headers = {'Authorization':'TokenName Token'}
 
-class Wercker(models.Model):
-
+class wercker(models.Model):
+#“””Model for wercker
+#“””
     TokenName = models.CharField(max_length=30,help_text="name of the wercker token")
     Token = models.CharField(max_length=30,help_text="This is the wercker token")
     #url = models.CharField(default=None,max_length=255,help_text="BuildTool API url")
