@@ -22,10 +22,16 @@ headers = {'Authorization':'TokenName Token'}
 
 class wercker(models.Model):
       def __init__(self,TokenName,Token):
-          self.TN = TokenName
-          self.T  = Token
+          #self.TN = TokenName
+          #self.T  = Token
+          self.TN = models.CharField(max_length=30,help_text="name of the wercker token")
+          self.T  = models.CharField(max_length=30,help_text="This is the wercker token")
           r = requests.get(url, headers=headers, verify=True)
           inp = r.json()
           ScreenValues = json2html.convert(json = inp)
-          return ScreenValues
+          #return ScreenValues
+          #return HttpResponse(json2html.convert(json = inp))
+          ScreenValues = HttpResponse(json2html.convert(json = inp))
+          def __unicode__(self):
+              return self.name
 
