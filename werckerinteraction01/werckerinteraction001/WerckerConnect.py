@@ -16,6 +16,6 @@ class WerckerConect:
         print(json2html.convert(json = inp))
 
 
-#ConnectToWercker_instance = ConnectToWercker()
-#ConnectToWercker_instance() #this is calling the __call__ method
+ConnectToWercker_instance = WerckerConect(dpllogger,8348846cc6543d045b7e8030810a2e19074bba1b4a87a8d85f52316eaade3bd9)
+ConnectToWercker_instance() #this is calling the __call__ method
 

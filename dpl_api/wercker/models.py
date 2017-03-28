@@ -21,16 +21,14 @@ headers = {'Authorization':'TokenName Token'}
 #         return self.choice_text
 
 class wercker(models.Model):
-      def __init__(self,TokenName,Token):
+      def __init__(self,TokeName='dpllogger',Token='8348846cc6543d045b7e8030810a2e19074bba1b4a87a8d85f52316eaade3bd9'):
           #self.TN = TokenName
           #self.T  = Token
-          self.TN = models.CharField(max_length=30,help_text="name of the wercker token")
-          self.T  = models.CharField(max_length=30,help_text="This is the wercker token")
+          self.TokeName = models.CharField(max_length=30,help_text="name of the wercker token")
+          self.Token  = models.CharField(max_length=30,help_text="This is the wercker token")
           r = requests.get(url, headers=headers, verify=True)
           inp = r.json()
           ScreenValues = json2html.convert(json = inp)
-          #return ScreenValues
-          #return HttpResponse(json2html.convert(json = inp))
           ScreenValues = HttpResponse(json2html.convert(json = inp))
           def __unicode__(self):
               return self.name
