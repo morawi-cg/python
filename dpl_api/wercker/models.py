@@ -20,8 +20,8 @@ headers = {'Authorization':'TokenName Token'}
 #    def _unicode_(self):
 #         return self.choice_text
 
-class wercker(models.Model):
-      def __init__(self,TokeName,Toke):
+class werckermodels(models.Model):
+        def __init__(self,TokeName,Toke):
           #self.TN = TokenName
           #self.T  = Token
           self.TokeName = models.CharField(max_length=30,help_text="name of the wercker token")
