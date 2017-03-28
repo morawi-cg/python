@@ -21,7 +21,7 @@ headers = {'Authorization':'TokenName Token'}
 #         return self.choice_text
 
 class wercker(models.Model):
-      def __init__(self,TokeName='dpllogger',Token='8348846cc6543d045b7e8030810a2e19074bba1b4a87a8d85f52316eaade3bd9'):
+      def __init__(self,TokeName,Toke):
           #self.TN = TokenName
           #self.T  = Token
           self.TokeName = models.CharField(max_length=30,help_text="name of the wercker token")
