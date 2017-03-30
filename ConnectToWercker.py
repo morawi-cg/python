@@ -14,5 +14,3 @@ r = requests.get(url, headers=headers, verify=True)
 outp = {}
 inp = r.json()
 print(json2html.convert(json = inp))
-
-

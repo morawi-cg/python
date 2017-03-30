@@ -1,9 +1,11 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+# Patterns use was deprecated and the urlpaterns are equal to a list
+
+urlpatterns = [
 
    url(r'^admin', include(admin.site.urls)),
-   url(r'^wercker/', include(wercker.urls)),
-)
+   url(r'^wercker/', include('wercker.urls')),
+]

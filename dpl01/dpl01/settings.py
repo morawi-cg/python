@@ -31,13 +31,14 @@ ALLOWED_HOSTS = ['0.0.0.0','192.168.99.101','192.168.99.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'wercker.apps.WerckerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wercker.apps.WerckerConfig',
+    #'wercker.apps.WerckerConfig',
 ]
 
 MIDDLEWARE = [
