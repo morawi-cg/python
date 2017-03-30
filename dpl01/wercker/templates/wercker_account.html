@@ -1,0 +1,9 @@
+<h1> Template01 </h1>
+
+
+<form role = "form" method="post" action="{%url 'detail' %}">
+   {% csrf_token %}
+   {{ form }}
+   <button type="submit">Save</button>
+</form>
+
