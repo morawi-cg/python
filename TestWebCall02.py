@@ -13,4 +13,5 @@ class TestWebCall02:
     print(r2.encoding)
     print(r2.text)
     print(r2.json())
-    TestWebCall02('','')
+
+
